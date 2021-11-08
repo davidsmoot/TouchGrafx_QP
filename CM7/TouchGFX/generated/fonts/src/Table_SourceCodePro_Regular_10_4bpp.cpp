@@ -19,6 +19,6 @@ touchgfx::GeneratedFont& getFont_SourceCodePro_Regular_10_4bpp();
 
 touchgfx::GeneratedFont& getFont_SourceCodePro_Regular_10_4bpp()
 {
-    static touchgfx::GeneratedFont SourceCodePro_Regular_10_4bpp(glyphs_SourceCodePro_Regular_10_4bpp, 1, 10, 0, 4, 0, 0, 0, unicodes_SourceCodePro_Regular_10_4bpp, kerning_SourceCodePro_Regular_10_4bpp, 63, 0, 0, 0);
+    static touchgfx::GeneratedFont SourceCodePro_Regular_10_4bpp(glyphs_SourceCodePro_Regular_10_4bpp, 1, 10, 0, 4, 1, 0, 0, unicodes_SourceCodePro_Regular_10_4bpp, kerning_SourceCodePro_Regular_10_4bpp, 63, 0, 0, 0);
     return SourceCodePro_Regular_10_4bpp;
 }
