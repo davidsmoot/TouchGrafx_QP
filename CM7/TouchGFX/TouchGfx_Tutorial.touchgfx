@@ -1,0 +1,531 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "introduction",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "headline",
+            "X": 0,
+            "Y": 73,
+            "Width": 800,
+            "Height": 298,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": true,
+            "Moveable": true
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "arrow_left.png",
+            "Alpha": 255,
+            "Name": "arrow_left",
+            "X": 6,
+            "Y": 224,
+            "Width": 16,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "arrow_right.png",
+            "Alpha": 255,
+            "Name": "arrow_right",
+            "X": 776,
+            "Y": 224,
+            "Width": 16,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 0
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Demo"
+            }
+          }
+        ],
+        "Name": "Introduction",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "hw_input_value",
+            "X": 0,
+            "Y": 147,
+            "Width": 800,
+            "Height": 156,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "hw_input",
+            "X": 360,
+            "Y": 146,
+            "Width": 71,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "dark_button_pressed.png",
+            "Released": "dark_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId4",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style2",
+            "Name": "hw_output",
+            "X": 220,
+            "Y": 311,
+            "Width": 360,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "arrow_left.png",
+            "Released": "arrow_left.png",
+            "Alpha": 255,
+            "Name": "arrow_left",
+            "X": 6,
+            "Y": 224,
+            "Width": 16,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "arrow_right.png",
+            "Released": "arrow_right.png",
+            "Alpha": 255,
+            "Name": "arrow_right",
+            "X": 776,
+            "Y": 224,
+            "Width": 16,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ButtonClicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "hw_output"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonClicked"
+            }
+          },
+          {
+            "InteractionName": "GoBack",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "arrow_left"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Introduction"
+            }
+          },
+          {
+            "InteractionName": "GoForward",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "arrow_right"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Introduction"
+            }
+          }
+        ],
+        "Name": "Demo",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "border",
+            "X": 0,
+            "Y": 0,
+            "Width": 200,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 1,
+            "Y": 1,
+            "Width": 198,
+            "Height": 78,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "text",
+            "X": 1,
+            "Y": 1,
+            "Width": 198,
+            "Height": 79,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "LabelBox",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 80
+      }
+    ],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "ui",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "system",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "view",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "presenter",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "model",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "introduction",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "understanding",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "input",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "output",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "system_input_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "system_output_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "view_description",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "view_input_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "view_output_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "presenter_input_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "presenter_output_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "model_input_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "model_output_code",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "mvp_in_short",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "presenter_description",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "model_description",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "system_description",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "demo",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      }
+    ],
+    "Name": "TouchGfx_Tutorial",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Introduction",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../../STM32H747I-DISCO.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../../gcc/Makefile clean && make -f ../../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7"
+  },
+  "Version": "4.17.0",
+  "CreatedBy": "4.17.0"
+}
