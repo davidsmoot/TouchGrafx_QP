@@ -192,6 +192,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c</locationURI>
 		</link>
 		<link>
+			<name>Application/User/Core/main.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CM7/Core/Src/main.c</locationURI>
+		</link>
+		<link>
 			<name>Application/User/Core/main.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/Core/Src/main.cpp</locationURI>

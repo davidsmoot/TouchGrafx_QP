@@ -13,7 +13,7 @@
 
 #if defined (CORE_CM7)
 
-	#define QSPY_UART_HANDLE huart1
+	#define QSPY_UART_HANDLE huart3
 #elif defined (CORE_CM4)
 	#define QSPY_UART_HANDLE huart8
 #endif

@@ -46,6 +46,11 @@ void OSWrappers::initialize()
 //    // Create a queue of length 1
 //    vsync_queue = osMessageQueueNew(1, 4, NULL);
 //    assert((vsync_queue != NULL) && "Creation of vsync message queue failed");
+
+	QS_BEGIN_ID(COMMON::QSUserMessages::TouchGfxDebug, 0)
+		QS_STR("OSW: Init");
+	QS_END()
+
 }
 
 /*

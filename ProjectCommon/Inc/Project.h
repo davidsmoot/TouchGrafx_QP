@@ -64,6 +64,7 @@ public:
 #ifdef Q_SPY
 enum class QSUserMessages {
 	DisplayText = QP::QS_USER,
+	TouchGfxDebug,
 	LastUserSig
 };
 #endif
