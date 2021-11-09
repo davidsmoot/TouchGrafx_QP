@@ -10,10 +10,12 @@
 
 #include "stm32h7xx_hal.h"
 
+extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart8;
 
 #if defined (CORE_CM7)
 
-	#define QSPY_UART_HANDLE huart3
+	#define QSPY_UART_HANDLE huart1
 #elif defined (CORE_CM4)
 	#define QSPY_UART_HANDLE huart8
 #endif
