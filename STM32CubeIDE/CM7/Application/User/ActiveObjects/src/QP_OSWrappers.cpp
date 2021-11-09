@@ -100,6 +100,10 @@ void OSWrappers::giveFrameBufferSemaphoreFromISR()
  */
 void OSWrappers::signalVSync()
 {
+	QS_BEGIN_ID(COMMON::QSUserMessages::TouchGfxDebug, 0)
+		QS_STR("OSW: SignalVS");
+	QS_END()
+
 	static QP::QEvt VSyncEvt = {.sig = COMMON::VSYNC_OCCURRED_SIG};
 	COMMON::AO_GUI_Mgr->POST(&VSyncEvt, 0);
 //	QP::QF::PUBLISH(&VSyncEvt, AO_GUI_Mgr);
